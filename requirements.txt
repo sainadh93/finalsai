@@ -1,0 +1,32 @@
+# Python: 3.10.x
+
+# Keep NumPy <2 because FER/TensorFlow compatibility is messy on Windows
+numpy==1.26.4
+
+# OpenCV pinned (newer versions pull numpy>=2)
+opencv-python==4.8.1.78
+opencv-contrib-python==4.8.1.78
+
+# YOLO
+ultralytics==8.4.5
+
+# Emotion detection
+fer==22.5.1
+tensorflow-intel==2.15.0
+
+# FER expects older moviepy import path: moviepy.editor
+moviepy==1.0.3
+
+# Common utils needed by FER + ultralytics
+pandas==2.3.3
+tqdm==4.67.1
+matplotlib==3.10.8
+pillow==11.3.0
+
+# FER dependency (light wrapper, not the ffmpeg binary)
+ffmpeg==1.4
+
+# FER dependency for face models
+facenet-pytorch==2.6.0
+torch==2.9.1
+torchvision==0.24.1
